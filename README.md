@@ -1,2 +1,2 @@
-# clone-1-twitter
-twitter_clone_Homepage
+# clone_1
+x-twitter_static_homepage

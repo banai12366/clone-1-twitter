@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #000000;
+    color: #E7E9EA;
+    overflow:hidden;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 372px 610px auto;
+    flex-wrap: wrap;
+    margin-inline: 50px;
+    margin-block: 8px;
+}
+
+
+/*---Left-Layout--*/
+.header {
+    height: 100%;
+}
+
+.layout-leftBar {
+    float: right;
+    height: 100%;
+    width: 287px;
+}
+
+
+.layout-logo {
+    padding-inline-start: 12px;
+    padding-top: 5px;
+    height: 50px;
+    width: 50px;
+    filter: invert(96%) sepia(9%) saturate(31%) hue-rotate(155deg) brightness(94%) contrast(99%);
+}
+
+.layout-logo svg {
+    height: 30px;
+}
+
+.layoutleft__menus {
+    width: 252px;
+    padding-inline: 12px;
+}
+
+.layoutleft__menus-home {
+    height: 50px;
+    width: 242px;
+}
+
+.layoutleft__menus-home--innerHome {
+    display: flex;
+    height: 50px;
+    width: max-content;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #181818;
+    }
+}
+
+.layoutleft__menus--logo {
+    height: 26px;
+    width: 26px;
+    filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+}
+
+.layoutleft__menus--text {
+    font-size: 20px;
+    margin-inline: 20px 16px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-style: TwitterChirp;
+}
+
+.layoutleft-post {
+    height: 52px;
+    width: 230px;
+    background-color: #1D9BF0;
+    margin: 4px 0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:hover {
+        background-color: #1A8CD8;
+    }
+}
+
+.layout-post--text {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.layoutleft-account {
+    margin-block: 12px;
+    height: 65.26px;
+    width: 242.2px;
+    display: grid;
+    grid-template-columns: 40px auto 18.75px;
+    border-radius: 25px;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        background-color: #181818;
+    }
+}
+
+.layoutleft-account--img {
+    height: 40px;
+    overflow: hidden;
+}
+
+.layoutleft-account--img img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.layoutleft-account--text {
+    margin-inline: 12px;
+}
+
+.layoutleft-account--text h2 {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.layoutleft-account--text span {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: inherit;
+    opacity: 0.6;
+}
+
+.layoutleft-account--moretypeIcon svg {
+    height: 18.75px;
+    width: 18.75px;
+    filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+    padding-right: 3px;
+}
+
+.layout-main {
+    border: 0.800px solid #2F3336;
+    margin-right: 24px;
+}
+
+.layout_rightBar {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout_rightBar-searchbar {
+    width: 350px;
+    height: 44px;
+    margin-bottom: 12px;
+    background-color: #202327;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout_rightBar-searchbar--icon {
+    padding-left: 12px;
+    width: 44px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.layout_rightBar-searchbar--icon svg {
+    width: 44px;
+    height: 18px;
+    filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+    padding-right: 3px;
+}
+
+.layout_rightBar-searchbar input {
+    width: 304.4px;
+    height: 42.4px;
+    padding: 12px;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    cursor: text;
+    font-size: 15px;
+    font-weight: 400;
+    color: #E7E9EA;
+}
+
+.layout_rightBar-subscribe {
+    height: 161.6px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 16px 12px;
+    margin-bottom: 16px;
+    border: 0.800px solid #2F3336;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.layout_rightBar-subscribe span {
+    font-weight: 800;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(231, 233, 234);
+}
+
+.layout_rightBar-subscribe p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.layout_rightBar-subscribe button {
+    height: 36px;
+    width: 106.46px;
+    color: rgb(231, 233, 234);
+    padding: 0px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #1D9BF0;
+    border: none;
+
+    &:hover {
+        background-color: #1A8CD8;
+    }
+}
+
+.layout_rightBar-Whappening {
+    width: 350px;
+    height: 528.7px;
+    border-radius: 20px;
+    border: 0.800px solid #2F3336;
+    color: rgb(231, 233, 234);
+    padding: 12px;
+}
+
+.layout_rightBar-Whappening--heading {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font: normal 800 20px/24px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+.layout_rightBar-Whappening--box {
+    padding: 10px 12px;
+    height: 103px;
+    display: flex;
+}
+
+.layout_rightBar-Whappening--box img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.layout_rightBar-Whappening--box--text {
+    margin-left: 7px;
+    height: 70px;
+}
+
+.layout_rightBar--text--h5 {
+    color: rgb(231, 233, 234);
+    margin-bottom: 2px;
+    font: normal 700 15px/20px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 4px 0px;
+}
+
+.layout_rightBar--text--span {
+    font-size: 8px;
+    font-weight: 400;
+    font: normal 400 13px/16px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    opacity: 0.5;
+    color: rgb(231, 233, 234);
+}
+
+.layout_rightBar--text--span2 {
+    color: #1D9BF0;
+}
+
+.layout_rightBar-Whappening--trendings--content {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layoutleft-account--moretypeIcon--trending {
+    opacity: 0.5;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    &:hover {
+        /* filter: invert(46%) sepia(78%) saturate(2341%) hue-rotate(181deg) brightness(102%) contrast(88%); */
+        background-color: #202327;
+    }
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .header {
+        width: 100px;
+    }
+
+    .layout-leftBar {
+        width: 80px;
+    }
+
+    .layoutleft__menus--text {
+        display: none;
+    }
+}
+
+.layoutleft-post svg {
+    display: none;
+    opacity: 0;
+}
+
+@media (max-width: 1005px) and (min-width: 500px) {
+    .layout_rightBar {
+        display: none;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .layoutleft-post svg {
+        display: block;
+        height: 26px;
+        width: 26px;
+        filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 500px) {
+    body {
+        height: 100vh;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 150px 480px auto;
+        flex-wrap: wrap;
+    }
+
+    .layoutleft-post {
+        height: 52px;
+        width: 52px;
+        background-color: #1D9BF0;
+        margin: 4px 0;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:hover {
+            background-color: #1A8CD8;
+        }
+    }
+
+    .layoutleft-post span {
+        display: none;
+        opacity: 0;
+    }
+
+    .layoutleft-post svg {
+        display: block;
+        opacity: 1;
+        height: 26px;
+        width: 26px;
+        filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+    }
+
+    .layoutleft-account--text,
+    .layoutleft-account--moretypeIcon {
+        display: none;
+        opacity: 0;
+    }
+
+    .layoutleft__menus-home {
+        height: 50px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 1095) {
+    .layout {
+        display: grid;
+        grid-template-columns: 100px 450px auto;
+        flex-wrap: wrap;
+    }
+}
+
+.layout-main-loaders {
+    height: 53px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.800px solid #2F3336;
+    position: relative;
+
+    &:hover {
+        background-color: #16181a;
+        cursor: hover;
+    }
+}
+
+.layout-main-contents--forYou,
+.layout-main-contents--following {
+    font: normal 700 15px/20px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.layout-main-contents--following {
+    opacity: 0.5;
+}
+
+.layout-main-contents--forYou--bar {
+    height: 5px;
+    width: 60px;
+    background-color: #1D9BF0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 111px;
+}
+
+.layout-main-description {
+    height: 119.2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.800px solid #2F3336;
+}
+
+.layout-main-description--logo {
+    height: 100%;
+    width: 80px;
+    padding: 15px 0 0 15px;
+}
+
+.layout-main-description--logo img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.layout-main-description--text {
+    height: 100%;
+    width: 514.4px;
+    padding: 16px 0 15px;
+}
+
+.layout-main-description--text--input {
+    width: 100%;
+    height: 55.2px;
+    margin-top: 0px;
+}
+
+.layout-main-description--text--input input {
+    height: 28px;
+    width: 98%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-block: 2px;
+    font: normal 400 20px/24px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(231, 233, 234);
+}
+
+.layout-main-description--text--imogies {
+    height: 48px;
+    width: 518.4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-main-description--text--imogies--mogies {
+    height: 36px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(36px, 38px));
+}
+
+.layout-main-description--text--imogies--mogies--container {
+    height: 36px;
+    width: 36px;
+    border: 0.800px solid #111111;
+}
+
+.layout-main-description--text--imogies--mogies--container svg {
+    height: 20px;
+    width: 20px;
+    filter: invert(62%) sepia(100%) saturate(3696%) hue-rotate(179deg) brightness(94%) contrast(93%);
+}
+
+.layout-main-description--text--imogies-post {
+    height: 36px;
+    width: 78.6px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.layout-main-description--text--imogies-post--div {
+    height: 35px;
+    max-width: 85%;
+    background-color: #1D9BF0;
+    border-radius: 30px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-main-description--text--imogies-post--div span {
+    font: normal 400 17px/20px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.layout-main-description--showMore {
+    width: 100%;
+    height: 55px;
+    border-bottom: 0.800px solid #252121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-main-description--showMore span {
+    font: normal 400 15px/20px TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1D9BF0;
+}
+
+.layout-main-post {
+    height: 480px;
+    width: 100%;
+    display: flex;
+}
+
+.layout-main-post--sidebar {
+    height: 100%;
+    width: 100%;
+    padding-block: 10px
+}
+
+.layout-main-post--sidebar-userName {
+    height: 26px;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.layout-main-post--sidebar-userName--part1 {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.layout-main-post--sidebar-userName--part1 h2 {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.layout-main-post--sidebar-userName--part1 span {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: inherit;
+    opacity: 0.6;
+}
+
+.layout-main-post--sidebar-userName--part1--svg {
+    display: flex;
+    justify-content: end;
+}
+
+.layout-main-post--sidebar-userName--part1--svg svg {
+    height: 18.75px;
+    width: 18.75px;
+    filter: invert(95%) sepia(3%) saturate(847%) hue-rotate(194deg) brightness(105%) contrast(84%);
+    padding-right: 3px;
+}
+
+.layout-main-post--sidebar-userName--part2 p {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.layout-main-post--sidebar--part2--Hashtag {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1D9BF0;
+    margin-bottom: 10px;
+}
+
+.layout-main-post--sidebar--part3 {
+    height: 280px;
+    width: 97%;
+    border-radius: 15px;
+    background-color: #141719a6;
+    border: 0.800px solid #343a3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.layout-main-post--sidebar--part3 span {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(231, 233, 234);
+}
+
+.layout-main-post--sidebar--part3 h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0.8;
+    font-size: 17px;
+    font-style: normal;
+}

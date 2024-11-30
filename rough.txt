@@ -1,0 +1,6 @@
+responsive thing:
+chatGPT
+
+screen to till 1281 => creen remains same:
+1280 ->Layout-left only icons and , no title of the section:
+1005-500 => NO layout-right section
